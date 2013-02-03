@@ -1,6 +1,6 @@
 {
 	"name": "nitra/php-min",
-	"version": "0.0.1",
+	"version": "0.0.5",
 	"type": "library",
 	"description": "Minifying CSS, JS",
 	"keywords": ["cssmin","jsminplus","minify"],
@@ -26,12 +26,12 @@
 		}
 	},
 	"require": {
-		"php": ">=5.0"
+		"php": ">=5.3"
 	},
 	"autoload": {
 		"psr-0": {
 			"CssMin": "CssMin/",
-			"JsMinPlus": "JsMinPlus/"
+			"JSMinPlus": "JSMinPlus/"
 		}
 	}
 }
