@@ -30,7 +30,8 @@
 	},
 	"autoload": {
 		"psr-0": {
-			"PhpMin": "src/"
+			"CssMin": "CssMin/",
+			"JsMinPlus": "JsMinPlus/",
 		}
 	}
 }
