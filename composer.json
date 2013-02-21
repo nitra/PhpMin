@@ -1,6 +1,6 @@
 {
 	"name": "nitra/php-min",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"type": "library",
 	"description": "Minifying CSS, JS",
 	"keywords": ["cssmin","jsminplus","minify"],
@@ -18,21 +18,29 @@
 			"homepage": "https://profiles.google.com/joe.scylla"
 		}
 	],
-	"repositories": {
-		"Github": {
-			"vcs": {
-				"url": "git://github.com/nitra/PhpMin.git"
-			}
-		}
-	},
 	"require": {
-		"php": ">=5.3"
+		"php": ">=5.3",
+        "cssmin/cssmin": "*",
+        "mrclay/minify": "*"
 	},
-	"autoload": {
-		"psr-0": {
-			"CssMin": "CssMin/",
-			"JSMinPlus": "JSMinPlus/"
-		}
-	}
+	"repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "cssmin/cssmin",
+                "version": "3.0.1",
+                "dist": { "url": "http://cssmin.googlecode.com/files/cssmin-v3.0.1.php", "type": "file" },
+                "autoload": { "classmap": [ "cssmin-v3.0.1.php" ] }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "mrclay/minify",
+                "version": "2.1.5",
+                "dist": { "url": "http://minify.googlecode.com/files/minify-2.1.5.zip", "type": "zip" },
+                "autoload": { "classmap": [ "min/lib/" ] }
+            }
+        }
+    ]
 }
-
