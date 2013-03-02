@@ -20,8 +20,8 @@
 	],
 	"require": {
 		"php": ">=5.3",
-        "cssmin/cssmin": "2.1.5",
-        "mrclay/minify": "3.0.1"
+        "cssmin/cssmin": "*",
+        "mrclay/minify": "*"
 	},
 	"repositories": [
         {
